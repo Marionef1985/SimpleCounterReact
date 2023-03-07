@@ -10,4 +10,4 @@ import SimpleCounter from "./component/SimpleCounter.jsx";
 
 
 //render your react application
-ReactDOM.render(<SimpleCounter fisrtDigit="0" secondDigit="0" thirdDigit="0" fourthDigit="0" />, document.querySelector("#app"));
+ReactDOM.render(<SimpleCounter firstDigit="1" secondDigit="2" thirdDigit="3" fourthDigit="4" />, document.querySelector("#app"));
