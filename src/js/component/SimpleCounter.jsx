@@ -8,13 +8,13 @@ const SimpleCounter = (props) => {
   return (
     <>
       <div className="conatiner-fluid bigCounter">
-        <div className="container">
+        <div className="container d-flex justify-content-center">
           <div className="row">
-            <div className="col-3 clock">00</div>
-            <div className="col-2 fourthDigit">{props.fourthDigit}</div>
-            <div className="col-2 thirdDigit">{props.thirdDigit}</div>
-            <div className="col-2 secondDigit">{props.secondDigit}</div>
-            <div className="col-2 firstDigit">{props.firstDigit}</div>
+            <div className="col-3 m-0"><i className="fa-regular fa-clock"></i></div>
+            <div className="col-2 m-1 fourthDigit">{props.fourthDigit % 10}</div>
+            <div className="col-2 m-0 thirdDigit">{props.thirdDigit % 10}</div>
+            <div className="col-2 m-1 secondDigit">{props.secondDigit % 10}</div>
+            <div className="col-2 m-0 firstDigit">{props.firstDigit % 10}</div>
           </div>
         </div>
       </div>
